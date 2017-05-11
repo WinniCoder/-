@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/textColorPrimary"
+            android:text="校园"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_card"
+        style="@style/school_card_view_styles"
+        card_view:cardCornerRadius="5dp">
+        <LinearLayout
+            style="@style/school_vertical_linear_styles"
+            android:background="#F2727D">
+            <TextView
+                style="@style/school_item_styles"
+                android:text="校园卡服务" />
+            <View
+                style="@style/school_view_styles" />
+            <LinearLayout
+                style="@style/school_horizontal_linear_styles">
+                <TextView
+                    android:id="@+id/card_content"
+                    style="@style/school_item_content_styles"
+                    android:text="点击登录校园卡"/>
+                <ImageView
+                    style="@style/school_image_styles" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_electric"
+        style="@style/school_card_view_styles"
+        card_view:cardCornerRadius="5dp">
+        <LinearLayout
+            style="@style/school_vertical_linear_styles"
+            android:background="#BED984">
+            <TextView
+                style="@style/school_item_styles"
+                android:text="电费查询" />
+            <View
+                style="@style/school_view_styles" />
+            <LinearLayout
+                style="@style/school_horizontal_linear_styles">
+                <TextView
+                    android:id="@+id/dormitory_electricity"
+                    style="@style/school_item_content_styles"
+                    android:text="未查询到宿舍信息，点击绑定" />
+                <ImageView
+                    style="@style/school_image_styles" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_library"
+        style="@style/school_card_view_styles"
+        card_view:cardCornerRadius="5dp">
+        <LinearLayout
+            style="@style/school_vertical_linear_styles"
+            android:background="#F2C36B">
+            <TextView
+                style="@style/school_item_styles"
+                android:text="图书馆" />
+            <View
+                style="@style/school_view_styles"/>
+            <LinearLayout
+                style="@style/school_horizontal_linear_styles">
+                <TextView
+                    android:id="@+id/library_info"
+                    style="@style/school_item_content_styles"
+                    android:text="点击登录图书馆" />
+                <ImageView
+                    style="@style/school_image_styles" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

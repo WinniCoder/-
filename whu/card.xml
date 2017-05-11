@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="卡钱包"
+                android:textColor="@color/hintTextColor"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/card_money_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="电子账户"
+                android:textColor="@color/hintTextColor"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/account_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/card_view_styles"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/recharge"
+            style="@style/card_item_linear_styles">
+            <ImageView
+                style="@style/card_icon_styles"
+                android:src="@drawable/recharge"/>
+            <TextView
+                style="@style/card_text_styles"
+                android:text="充值"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/net_fee"
+            style="@style/card_item_linear_styles">
+            <ImageView
+                style="@style/card_icon_styles"
+                android:src="@drawable/net_fee"/>
+            <TextView
+                style="@style/card_text_styles"
+                android:text="网费"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/care"
+            style="@style/card_item_linear_styles">
+            <ImageView
+                style="@style/card_icon_styles"
+                android:src="@drawable/care"/>
+            <TextView
+                style="@style/card_text_styles"
+                android:text="care+"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/card_view_styles"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/details"
+            style="@style/card_item_linear_styles">
+            <ImageView
+                style="@style/card_icon_styles"
+                android:src="@drawable/details"/>
+            <TextView
+                style="@style/card_text_styles"
+                android:text="账户明细"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/reported_loss"
+            style="@style/card_item_linear_styles">
+            <ImageView
+                style="@style/card_icon_styles"
+                android:src="@drawable/reported_loss"/>
+            <TextView
+                style="@style/card_text_styles"
+                android:text="挂失"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mine_card"
+            style="@style/card_item_linear_styles">
+            <ImageView
+                style="@style/card_icon_styles"
+                android:src="@drawable/me"/>
+            <TextView
+                style="@style/card_text_styles"
+                android:text="我"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/card_view_styles"/>
+
+</LinearLayout>

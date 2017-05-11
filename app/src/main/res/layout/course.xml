@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/course_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/examination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="成绩"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:id="@+id/weeks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/weeks_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownVerticalOffset="40dp"
+                android:padding="10dp"
+                android:popupBackground="#00000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/Monday"
+            style="@style/weekday_styles"
+            android:text="周一" />
+
+        <TextView
+            android:id="@+id/Tuesday"
+            style="@style/weekday_styles"
+            android:text="周二" />
+
+        <TextView
+            android:id="@+id/Wednesday"
+            style="@style/weekday_styles"
+            android:text="周三" />
+
+        <TextView
+            android:id="@+id/Thursday"
+            style="@style/weekday_styles"
+            android:text="周四" />
+
+        <TextView
+            android:id="@+id/Friday"
+            style="@style/weekday_styles"
+            android:text="周五" />
+
+        <TextView
+            android:id="@+id/Saturday"
+            style="@style/weekday_styles"
+            android:text="周六" />
+
+        <TextView
+            android:id="@+id/Sunday"
+            style="@style/weekday_styles"
+            android:text="周日" />
+    </LinearLayout>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/course_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_course"
+                        style="@style/course_num_styles"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/second_course"
+                        style="@style/course_num_styles"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/third_course"
+                        style="@style/course_num_styles"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/forth_course"
+                        style="@style/course_num_styles"
+                        android:text="4" />
+
+                    <TextView
+                        android:id="@+id/fifth_course"
+                        style="@style/course_num_styles"
+                        android:text="5" />
+
+                    <TextView
+                        android:id="@+id/sixth_course"
+                        style="@style/course_num_styles"
+                        android:text="6" />
+
+                    <TextView
+                        android:id="@+id/seventh_course"
+                        style="@style/course_num_styles"
+                        android:text="7" />
+
+                    <TextView
+                        android:id="@+id/eighth_course"
+                        style="@style/course_num_styles"
+                        android:text="8" />
+
+                    <TextView
+                        android:id="@+id/ninth_course"
+                        style="@style/course_num_styles"
+                        android:text="9" />
+
+                    <TextView
+                        android:id="@+id/tenth_course"
+                        style="@style/course_num_styles"
+                        android:text="10" />
+
+                    <TextView
+                        android:id="@+id/eleventh_course"
+                        style="@style/course_num_styles"
+                        android:text="11" />
+
+                    <TextView
+                        android:id="@+id/twelfth_course"
+                        style="@style/course_num_styles"
+                        android:text="12" />
+
+                    <TextView
+                        android:id="@+id/thirteenth_course"
+                        style="@style/course_num_styles"
+                        android:text="13" />
+                </LinearLayout>
+
+                <com.whu_phone.view.CourseView
+                    android:id="@+id/course_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+    </com.baoyz.widget.PullRefreshLayout>
+
+</LinearLayout>

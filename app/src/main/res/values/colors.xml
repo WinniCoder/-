@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#fdcdcd</color>
+    <color name="colorAccent">#f282b6</color>
+    <color name="textColorPrimary">#f282b6</color>
+    <color name="bottonSelectedColor">#fff282b6</color>
+    <color name="btnCanClickColor">#f282b6</color>
+    <color name="btnCanNotClickColor">#bab8b9</color>
+    <color name="dividerColor">#b6b6b6</color>
+    <color name="windowBackground">#f5f5f5</color>
+    <color name="hintTextColor">#c9c9c9</color>
+    <color name="errorColor">#fd6b3a</color>
+    <color name="normalColor">#3dd79c</color>
+</resources>
