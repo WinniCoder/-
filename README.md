@@ -1,6 +1,6 @@
 # 简易武大研究生助手，已上传至小米商城
 
-自定义view实现课表
+自定义view实现课表   
 用到了Volley、ActiveAndroid、butterknife等框架
 
 
